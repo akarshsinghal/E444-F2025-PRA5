@@ -26,7 +26,7 @@ _loaded_model: Optional[object] = None
 _vectorizer: Optional[object] = None
 _artifact_lock = threading.Lock()
 
-# Artifact loading
+#Artifact loading
 def _load_artifacts_once() -> None:
     """Lazily load model and vectorizer once per process."""
     global _loaded_model, _vectorizer
